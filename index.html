@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="overlay">
+                <h1>Currency Converter</h1>
+                <p>You can convert any currency in the whole world</p>
+                <div class="panel">
+                    <div class="fields">
+                        <div class="field">
+                            <input id="amount" type="text" spellcheck="false">
+                            <label>Amount</label>
+                        </div>
+                        
+                        <div class="field from">
+                            <div class="from-custom-select">
+                                <input id="from" type="text" spellcheck="false">
+                                <label>From</label>
+                            </div>
+                            <ul class="countries-list from"></ul>
+                        </div>
+                        
+                        <div class="replace-button"><img src="images/replace-button.png" alt="button"></div>
+                        
+                        <div class="field to">
+                            <div class="to-custom-select">
+                                <input id="to" type="text" spellcheck="false">
+                                <label>To</label>
+                            </div>
+                            <ul class="countries-list to"></ul>
+                        </div>
+
+                    </div>
+
+                    <div class="result"></div>
+
+                    <div>
+                        <span class="convert-button">Convert</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
